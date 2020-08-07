@@ -1,0 +1,76 @@
+nodejs is an intrepretor for executing javascript programs.
+
+made of  c++
+
+it is built on google chromes v8 engine, this engine was responsible for executing all html,css javascript files in their browser
+
+every browser has its own engine.
+
+working:
+
+javascript file 
+	||
+	\/
+c++ nodejs v8 engine
+	||
+	\/
+machine code
+
+In nodejs the javascript file is passed to v8 engine which converts into machine code
+which is then executed at the machine, the c++ enables the javascript file for performing various
+basic operations like file read, write, open etc, thus it allows the basic javascript file to operate in
+back end.
+
+
+jquery vs node js:
+jquery is client side scripting tool
+node js is server side scripting tool.
+
+
+we have to download and install node js on our system. 
+
+to execute the node js file in the visual code .. we can open the intergrated terminal of vstudio 
+by ctrl+` select anyone. 
+
+command : node filename.js
+
+
+there are many commands which are global variable:
+
+
+__dirname
+__filename
+clearImmediate(immediateObject)
+clearInterval(intervalObject)
+clearTimeout(timeoutObject)
+console
+exports
+global
+module
+process
+queueMicrotask(callback)
+require()
+setImmediate(callback[, ...args])
+setInterval(callback, delay[, ...args])
+setTimeout(callback, delay[, ...args])
+TextDecoder
+TextEncoder
+URL
+URLSearchParams
+WebAssembly
+
+these global variable can be used in server side and client side too
+
+
+there are FUNCTION EXPRESSIONS in node js
+
+var va=function(){        ///FUNCTION IS A KEYWORD
+//function body
+}
+to call:
+va()
+
+
+HERE THE FUNCTION IS ANONYMOUS BECAUSE IT DOESNT HAVE ANY NAME, THE FUNCTION IS ASSIGNES TO VARIABLE VA
+
+

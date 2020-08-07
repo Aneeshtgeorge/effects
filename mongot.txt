@@ -1,0 +1,39 @@
+download and install mongo db as usual.
+
+create folders "data" and "log" inside mongo db.
+
+inside data create another folder "db"
+
+open in command prompt(ctrl+r then cmd) go to path of bin folder in mongo db.
+
+then paste this command: 
+
+mongod --directoryperdb --dbpath "C:\Program Files\MongoDB\data\db" --logpath "C:\Program Files\MongoDB\log\mongo.log" --logappend --rest --install
+
+ Now you can start MongoDB as a service by typing this command:
+
+net start MongoDB
+
+You should see a message “MongoDB service was started successfully”.
+
+
+Now we should be working in the MongoDB shell and we can run that by typing this command within the bin directory.
+
+mongo
+
+If you want to exit the shell, you can do that by typing quit() or use Ctrl-C and then you can stop the MongoDB service with this command:
+
+net stop MongoDB
+
+
+
+
+=============================commands=========================
+db == to find database used
+use == to create a database
+	if already exists then it will connet to that database
+
+show bds == To list down all the databases, use the command show dbs. This command lists down all the databases and their size on the disk.
+the newly database will not be present unless we save something in it.
+
+
